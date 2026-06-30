@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>HTTP na Prática</title>
+</head>
+<body>
+
+
+    <h1>HTTP na prática: requisição e resposta</h1>
+
+    <div>
+        <a href="index.html">Início</a> |
+        <a href="historia_web.html">História da Web</a> |
+        <a href="estados.html">Estados</a> |
+        <a href="curriculo.html">Currículo</a> |
+        <a href="contato.html">Contato</a>
+    </div>
+
+    <hr>
+
+    <h2>O que é HTTP?</h2>
+
+    <p>
+        HTTP significa HyperText Transfer Protocol. Ele é o protocolo usado para
+        permitir a comunicação entre o navegador do usuário e o servidor onde o site está hospedado.
+    </p>
+
+    <h2>Cliente, servidor, requisição e resposta</h2>
+
+    <p>
+        O cliente geralmente é o navegador, como Chrome, Firefox ou Edge.
+        O servidor é o computador que guarda e envia os arquivos do site.
+    </p>
+
+    <p>
+        Quando acessamos uma página, o navegador envia uma requisição HTTP.
+        Depois disso, o servidor devolve uma resposta HTTP com o conteúdo solicitado.
+    </p>
+
+    <h2>Métodos GET e POST</h2>
+
+    <p>
+        O método <strong>GET</strong> é usado para solicitar dados, como abrir uma página.
+    </p>
+
+    <p>
+        O método <strong>POST</strong> é usado para enviar dados, como informações de um formulário.
+    </p>
+
+    <h2>Exemplo de requisição HTTP</h2>
+
+    <pre>
+GET /index.html HTTP/1.1
+Host: www.exemplo.com
+User-Agent: Navegador
+    </pre>
+
+    <h2>Exemplo de resposta HTTP</h2>
+
+    <pre>
+HTTP/1.1 200 OK
+Content-Type: text/html
+
+&lt;html&gt;
+    &lt;body&gt;
+        &lt;h1&gt;Página encontrada&lt;/h1&gt;
+    &lt;/body&gt;
+&lt;/html&gt;
+    </pre>
+
+    <h2>Códigos de status HTTP</h2>
+
+    <table border="1">
+        <tr>
+            <th>Código</th>
+            <th>Significado</th>
+        </tr>
+        <tr>
+            <td>200</td>
+            <td>OK. A requisição foi bem-sucedida.</td>
+        </tr>
+        <tr>
+            <td>301</td>
+            <td>Movido permanentemente para outro endereço.</td>
+        </tr>
+        <tr>
+            <td>400</td>
+            <td>Requisição inválida.</td>
+        </tr>
+        <tr>
+            <td>403</td>
+            <td>Acesso proibido.</td>
+        </tr>
+        <tr>
+            <td>404</td>
+            <td>Página não encontrada.</td>
+        </tr>
+        <tr>
+            <td>500</td>
+            <td>Erro interno no servidor.</td>
+        </tr>
+    </table>
+
+</body>
+</html>

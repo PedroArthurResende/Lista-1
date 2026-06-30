@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Contato</title>
+</head>
+<body>
+
+    <!-- Autor: Pedro | Turma: ADS | Data: 30/06/2026 -->
+
+    <h1>Formulário de Contato</h1>
+
+    <p>
+        Preencha os campos abaixo para entrar em contato.
+        Neste exercício, o formulário ainda não será enviado para um servidor.
+    </p>
+
+    <div>
+        <a href="index.html">Início</a> |
+        <a href="historia_web.html">História da Web</a> |
+        <a href="http.html">HTTP</a> |
+        <a href="estados.html">Estados</a> |
+        <a href="curriculo.html">Currículo</a>
+    </div>
+
+    <p>
+        <a href="curriculo.html">Voltar para o currículo</a>
+    </p>
+
+    <hr>
+
+    <form action="#" method="post">
+
+        <p>
+            <label for="nome">Nome:</label><br>
+            <input type="text" id="nome" name="nome" placeholder="Digite seu nome" required>
+        </p>
+
+        <p>
+            <label for="email">E-mail:</label><br>
+            <input type="email" id="email" name="email" placeholder="Digite seu e-mail" required>
+        </p>
+
+        <p>
+            <label for="assunto">Assunto:</label><br>
+            <input type="text" id="assunto" name="assunto" placeholder="Digite o assunto">
+        </p>
+
+        <p>
+            <label for="estado">Estado:</label><br>
+            <select id="estado" name="estado" required>
+                <option value="">Selecione seu estado</option>
+                <option value="SC">Santa Catarina</option>
+                <option value="PR">Paraná</option>
+                <option value="RS">Rio Grande do Sul</option>
+                <option value="SP">São Paulo</option>
+                <option value="RJ">Rio de Janeiro</option>
+                <option value="MG">Minas Gerais</option>
+            </select>
+        </p>
+
+        <p>
+            <label for="mensagem">Mensagem:</label><br>
+            <textarea id="mensagem" name="mensagem" rows="6" cols="40" placeholder="Digite sua mensagem"></textarea>
+        </p>
+
+        <p>
+            <button type="submit">Enviar</button>
+        </p>
+
+    </form>
+
+</body>
+</html>
